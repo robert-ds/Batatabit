@@ -3,7 +3,7 @@
   padding: 0px;
   box-sizing: border-box; 
 }
-
+/*Variables de Colores Base*/
 :root{
   /*Colores*/
   --bitcoin-orange:#F7931A;
@@ -11,7 +11,7 @@
   --secondary-blue:#1A9AF7;
   --soft-blue:#E7F5FF;
   --warm-black:#201E1C;
-  --black:282623;
+  --black: #282623;
   --gray: #BABABA;
   --off-white:#FAF8F7;
   --just-white:#fff;
@@ -24,6 +24,7 @@ html{
 }
 
 
+/*Sección del Header*/
 header{
   position:relative;
   display: flex;
@@ -89,6 +90,7 @@ header img{
   color:var(--black);
 }
 
+/*Boton Header*/
 .header--button span{
   display: inline-block;
   width: 24px;
@@ -97,6 +99,8 @@ header img{
   background-image: url('../assets/icons/mdi_keyboard_arrow_down.svg');
 }
 
+
+/*Sección Principal, Intercambios*/
 main{
   width:100%;
   height:auto;
@@ -118,6 +122,7 @@ main{
   margin: 0 auto;
 }
 
+/*Imagen Background Bitcoin*/
 .main-exchange-container .backgroundImg{
   width: 200px;
   height: 200px;
@@ -161,6 +166,7 @@ main{
   color: var(--bitcoin-orange);
 }
 
+/*Tabla de Monedas*/
 .currency-table--container{
   width: 90%;
   min-width: 230px;
@@ -244,4 +250,122 @@ main{
   font-size: 1.2rem;
   line-height: 1.5rem;
   color: var(--warm-black);
+}
+
+/*Sección Beneficios*/
+.main-product-detail{
+  position: relative;
+  width: 100%;
+  min-width: 320px;
+  height: auto;
+  padding: 20px 10px;
+  background-color: var(--warm-black);
+}
+
+.product-detail--batata-logo{
+  position: absolute;
+  width: 45px;
+  height: 25px;
+  background-image: url('../assets/imgs/logo.png');
+  top: -12px;
+  left: calc(50% - 20px);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.product-detail--title{
+  width: 90%;
+  min-width: 288px;
+  height: auto;
+  margin: 0 auto;
+  margin-top: 50px;
+  text-align: center;
+}
+
+.product-detail--title h2{
+  margin-bottom: 20px;
+  font-size: 2.4rem;
+  font-weight: bold;
+  line-height: 2.6rem;
+  color: var(--just-white);
+}
+
+.product-detail--title p{
+  margin-bottom: 20px;
+  font-size: 1.4rem;
+  font-weight: 500;
+  line-header: 1.8rem;
+  color: #808080;
+}
+
+.product-detail--card{
+    width: 90%;
+    min-width: 288px;
+    max-width: 400px;
+    height: 170px;
+    margin: 15px auto;
+    padding: 15px;
+    background-color: var(--black);
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.16);
+}
+
+.product-detail--card .clock{
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  margin-bottom: 10px;
+  background-image: url('../assets/icons/clock.svg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.product-detail--card .eye{
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  margin-bottom: 10px;
+  background-image: url('../assets/icons/eye.svg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.product-detail--card .dollar-sign{
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  margin-bottom: 10px;
+  background-image: url('../assets/icons/dollar-sign.svg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.product-detail--card .check-circle{
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  margin-bottom: 10px;
+  background-image: url('../assets/icons/check-circle.svg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.product--card-title{
+  margin-bottom: 15px;
+  font-size: 1.8rem;
+  font-weight: bold;
+  line-height: 1.8rem;
+  color: var(--just-white);
+}
+
+.product--card-body{
+  font-size: 1.4rem;
+  font-weight: 500;
+  line-height: 1.8rem;
+  color: #808080;
 }
