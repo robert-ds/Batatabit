@@ -6,15 +6,15 @@
 /*Variables de Colores Base*/
 :root{
   /*Colores*/
-  --bitcoin-orange:#F7931A;
-  --soft-orange:#FFE9D5;
-  --secondary-blue:#1A9AF7;
-  --soft-blue:#E7F5FF;
-  --warm-black:#201E1C;
+  --bitcoin-orange: #F7931A;
+  --soft-orange: #FFE9D5;
+  --secondary-blue: #1A9AF7;
+  --soft-blue: #E7F5FF;
+  --warm-black: #201E1C;
   --black: #282623;
   --gray: #BABABA;
-  --off-white:#FAF8F7;
-  --just-white:#fff;
+  --off-white: #FAF8F7;
+  --just-white: #fff;
 }
 
 html{
@@ -157,6 +157,15 @@ main{
   font-family: sans-serif;
 }
 
+.main-tables-container{
+  display: flex;
+  gap: 50px;
+  height:400px;
+  overflow-x: scroll;
+  overscroll-behavior-x: contain;
+  scroll-snap-type: x proximity;
+  margin: 0 40px;
+}
 .main-currency-table .currency-table--title{
   margin-bottom: 15px;
   font-size: 1.8rem;
@@ -199,7 +208,7 @@ main{
   background-color: var(--just-white); 
 }
 
-.currency-table--container .table__top-left, .comissions-tablet--container .table__top-left{
+.currency-table--container .table__top-left, .comissions-table--container .table__top-left{
   border-radius: 15px 0 0 0;
 }
 
@@ -211,11 +220,11 @@ main{
   border-radius: 0 0 0 15px;
 }
 
-.currency-table--container .table__bottom-right, .comissions-tablet--container .table__bottom-right{
+.currency-table--container .table__bottom-right, .comissions-table--container .table__bottom-right{
   border-radius: 0 0 15px 0;
 }
 
-.currency-table--container .table__right, .comissions-tablet--container .table__right{
+.currency-table--container .table__right, .comissions-table--container .table__right{
   font-size: 1.4rem;
   font-weight: normal;
   line-height: 1.7rem;
